@@ -1,4 +1,5 @@
 FROM node:20-slim AS base
+LABEL org.opencontainers.image.source="https://github.com/chelog/altv-pterodactyl-egg"
 
 USER root
 

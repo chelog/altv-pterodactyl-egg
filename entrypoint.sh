@@ -24,6 +24,8 @@ if [ -z ${ALTV_UPDATE} ] || [ "${ALTV_UPDATE}" == "1" ]; then
 	fi
 
 	altv-pkg $ALTV_BRANCH --yes
+	chmod +x altv-server
+	chmod +x altv-crash-handler
 fi
 
 # Display the command we're running in the output, and then execute it with the env
