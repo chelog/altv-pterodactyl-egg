@@ -4,7 +4,7 @@ LABEL org.opencontainers.image.source="https://github.com/chelog/altv-pterodacty
 USER root
 
 RUN apt-get update -y
-RUN apt-get install -y curl libatomic1 libc-bin wget apt-transport-https ca-certificates gnupg
+RUN apt-get install -y curl libatomic1 libc-bin wget apt-transport-https ca-certificates gnupg awscli
 RUN apt autoremove -y
 RUN apt-get clean
 RUN npm i -g altv-pkg@latest
